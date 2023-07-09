@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/*Cabeçalho*/
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+
+header img {
+    width: 150px;
+}
+
+header .navegation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+header .navegation a {
+    text-decoration: none;
+    color: #615F68;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+    
+}
+
+.navegation a:hover {
+    text-decoration: underline black;
+    transition: .4s;
+   
+}
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../img/bg-estacao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 80px;  
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.357);
+    position: absolute;
+    
+}   
+
+.banner h2, h3 {
+    color: white;
+    font-size: 6.7rem;
+    z-index: 1;
+    text-shadow: 1px 1px 10px black;
+}
+
+.banner h3 {
+    font-size: 2.4rem;
+}
+/* main */
+
+main {
+    width: 100%;
+}
+
+main .sobre {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+main .sobre h2 {
+    margin-top: 50px;
+    font-size: 1.8rem;
+}
+
+main .sobre p {
+    text-align: justify;
+}
+
+main .sobre p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .sobre img {
+    width: 100%;
+}
+
+
+.pontos-turisticos {
+    margin-top: 50px;
+    background-color: #E9E9E9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pontos-turisticos h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+   
+}
+
+.pontos-turisticos img {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.pontos-turisticos p,
+.pontos-turisticos ul {
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 10px;
+}
+
+.pontos-turisticos p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pontos-turisticos ul {
+    margin-left: 60px;
+}
+
+/*
+li::before {
+    content:'oi';
+    width: 20px;
+    height: 20px;
+    background-image: url("img/seta.png");
+    margin: 0 6px 0 0;
+}
+*/
+
+.galeria {
+    width: 100%;
+    height: 100vh; /*corrigir isso aqui*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.galeria p {
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 15px;
+}
+
+
+.fotos {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.fotos img {
+    opacity: 70%;
+    width: 33.3%;
+    margin-bottom: 0.5px;
+}
+
+.fotos img:hover {
+    opacity: 100%;
+    transition: .4s;
+}
+
+footer {
+    background-color: #F5BF00;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+footer span {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
